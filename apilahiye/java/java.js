@@ -55,6 +55,10 @@ function changeActive(e) {
                 input2.value = input1.value * data.rates.USD
 
             })
+            .catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
+            })
 
         fetch('https://api.exchangerate.host/latest?base=USD&symbols=RUB')
             .then(res => res.json())
@@ -76,6 +80,10 @@ function changeActive(e) {
                 p1.innerText = `1 RUB = ${data.rates.EUR} EUR`
                 input2.value = input1.value * data.rates.EUR
 
+            })
+            .catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=EUR&symbols=RUB')
             .then(res => res.json())
@@ -99,6 +107,10 @@ function changeActive(e) {
                 input2.value = input1.value * data.rates.GBP
 
             })
+            .catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
+            })
         fetch('https://api.exchangerate.host/latest?base=GBP&symbols=RUB')
             .then(res => res.json())
             .then((data) => {
@@ -118,6 +130,9 @@ function changeActive(e) {
                 p1.innerText = `1 USD = ${data.rates.RUB} RUB`
                 input2.value = input1.value * data.rates.RUB
 
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=RUB&symbols=USD')
             .then(res => res.json())
@@ -136,6 +151,9 @@ function changeActive(e) {
                 p1.innerText = `1 USD = ${data.rates.GBP} GBP`
                 input2.value = input1.value * data.rates.GBP
 
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=GBP&symbols=USD')
             .then(res => res.json())
@@ -154,6 +172,9 @@ function changeActive(e) {
                 p1.innerText = `1 USD = ${data.rates.EUR} EUR`
                 input2.value = input1.value * data.rates.EUR
 
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=EUR&symbols=USD')
             .then(res => res.json())
@@ -188,6 +209,9 @@ function changeActive(e) {
             .then((data) => {
                 p1.innerText = `1 EUR = ${data.rates.RUB} RUB`
                 input2.value = input1.value * data.rates.RUB
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=RUB&symbols=EUR')
             .then(res => res.json())
@@ -205,6 +229,9 @@ function changeActive(e) {
             .then((data) => {
                 p1.innerText = `1 EUR = ${data.rates.USD} USD`
                 input2.value = input1.value * data.rates.USD
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=USD&symbols=EUR')
             .then(res => res.json())
@@ -222,6 +249,9 @@ function changeActive(e) {
             .then((data) => {
                 p1.innerText = `1 EUR = ${data.rates.GBP} GBP`
                 input2.value = input1.value * data.rates.GBP
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=GBP&symbols=EUR')
             .then(res => res.json())
@@ -248,6 +278,9 @@ function changeActive(e) {
             .then((data) => {
                 p1.innerText = `1 GBP = ${data.rates.RUB} RUB`
                 input2.value = input1.value * data.rates.RUB
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=RUB&symbols=GBP')
             .then(res => res.json())
@@ -264,6 +297,9 @@ function changeActive(e) {
             .then((data) => {
                 p1.innerText = `1 GBP = ${data.rates.USD} USD`
                 input2.value = input1.value * data.rates.USD
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=USD&symbols=GBP')
             .then(res => res.json())
@@ -281,6 +317,9 @@ function changeActive(e) {
             .then((data) => {
                 p1.innerText = `1 GBP = ${data.rates.EUR} EUR`
                 input2.value = input1.value * data.rates.EUR
+            }).catch(error => {
+                error = "Произошла ошибка"
+                alert(error);
             })
         fetch('https://api.exchangerate.host/latest?base=EUR&symbols=GBP')
             .then(res => res.json())
